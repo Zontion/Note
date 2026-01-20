@@ -24,6 +24,7 @@ fun testWithStub() {
 	Assert.assertEquals("StubUser", result) //只驗證回傳資料
 }
 ```
+>[!info]
 >**Stub特性**：
 >* Stub不會紀錄是否被呼叫
 >* 不會檢查「被呼叫的參數(範例中的123)為何」
@@ -56,6 +57,7 @@ fun testUsingMock() {
 }
 ```
 
+>[!info]
 >**Mock特性：**
 >* Mock可以記錄是否被呼叫
 >* 可以驗證呼叫行為
@@ -76,3 +78,5 @@ fun testUsingMock() {
 ### Mock：一個假物件，可以用來驗證本身的邏輯與第三方元件的互動方式是否正確。
 
 ><font color="red">Mock可能會導致測試失敗，Stub僅僅用以取代真實物件，並不會導致測試失敗。</font>
+
+延伸閱讀：[[Mock Anrdoid Framework]]

@@ -2,8 +2,8 @@
 本篇學習關鍵字：
 * Stub：假物件，模擬外部相依物件的回傳結果。
 * Mock：假物件，用來驗證目標與相依物件的互動。
-* Test：測試程式
-* SUT：System under test，被測試物件
+* Test：測試程式。
+* SUT：System under test，被測試物件(也可以是方法)。
 
 ### 在進入正題前，先認識[[假物件Stub與Mock]]
 ___
@@ -23,7 +23,7 @@ fun main() {
 class Umbrella {
 	//雨傘價格計算
 	fun totalPrice(quantity: Int, price: Int): Int {
-		val isSunny = weather.isSunny() //取得是否是晴天的API
+		val isSunny = Weather().isSunny() //取得是否是晴天的API
 		//數量乘以價錢
 		var price = quantity * price 
 		if (isSunny) {
@@ -105,7 +105,7 @@ Stub定義如下圖
 
 ![[img_stub_1.png]]
 
->以上述雨傘Stub範例，各名詞對應如下
+>[!info]
 >* Test：測試程式，UmbrellaTest.totalPrice_sunnyDay()  
 >* SUT：被測試物件，也就是Umebralla.totalPrice()用來計價的方法。  
 >* Stub：假天氣物件StubWeather，用來回傳預期是晴天或雨天。
@@ -182,8 +182,5 @@ fun testInsertOrder() {
 相關關鍵字對應如下圖
 ![[img_mock_2.png]]
 
-
-
-參考資料：
-iT邦幫忙的Android TDD 系列 <https://ithelp.ithome.com.tw/users/20111896/ironman/2181>
-Fake 與 Stub & Mock <https://hackmd.io/@AlienHackMd/HycK5pEpo#Fake-%E8%88%87-Stub-amp-Mock>
+# 總結
+雖然已經了解Stub與Mock，測試時要建立Stub相對簡單，但如果每次都要建立Mock並做出不同的操作行為則會非常麻煩，此時就可以考慮使用[[Mock Anrdoid Framework]]來更方便地做到模擬物件行為。
