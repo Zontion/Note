@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "5f2c7cc87b043e9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a632d08427d2b74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a41ac5f8148faa6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "學習筆記/Android/自動化測試/假物件Stub與Mock.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "假物件Stub與Mock"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c21786405c8d81fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "1dfad5794e731266",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac5d10d2122a1bf9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "84b8f422470ecbf9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "b5ddf9ae4a374551",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "書籤"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "21c00ac43bb01095",
+    "type": "split",
+    "children": [
+      {
+        "id": "91fc7c03f4ff9376",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce0108d93f8bd65b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "學習筆記/Android/自動化測試/假物件Stub與Mock.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "假物件Stub與Mock 的反向連結"
+            }
+          },
+          {
+            "id": "76c5e23cfdf82622",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "學習筆記/Android/自動化測試/假物件Stub與Mock.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "假物件Stub與Mock 的對外連結"
+            }
+          },
+          {
+            "id": "4d1f383e110296a1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "45ffc124f28582db",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "e02a15e33cab13fe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "學習筆記/Android/自動化測試/假物件Stub與Mock.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "假物件Stub與Mock 的大綱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false
+    }
+  },
+  "active": "4a41ac5f8148faa6",
+  "lastOpenFiles": [
+    "學習筆記/Android/自動化測試/Espresso.md",
+    "學習筆記/Android/自動化測試/Appium.md",
+    "學習筆記/Android/自動化測試/假物件Stub與Mock.md",
+    "學習筆記/Android/自動化測試/自動化測試.md"
+  ]
+}
