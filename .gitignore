@@ -2,3 +2,12 @@
 .obsidian/workspace.json
 # 視窗大小、介面偏好等全域設定
 .obsidian/app.json
+.DS_Store
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.quartz-cache
+private/
+.replit
+replit.nix
