@@ -3,7 +3,7 @@ name: Deploy Quartz site to GitHub Pages
 on:
   push:
     branches:
-      - feature/20260121_convert_project_to_quartz
+      - "feature/20260121_convert_project_to_quartz"
 
 permissions:
   contents: read
