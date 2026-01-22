@@ -14,7 +14,7 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
-          Copyright © {year} Zontion. All rights reserved.
+          © {year} Zontion | 僅供學習交流，禁止商業用途
         </p>
       </footer>
     )
