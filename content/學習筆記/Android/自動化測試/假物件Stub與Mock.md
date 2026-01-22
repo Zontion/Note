@@ -2,7 +2,7 @@
 
 情境：一個Repository需要API回傳資料才能跑，但你不想用真的API。
 
-```
+```kotlin
 interface UserApi {
 	fun getUser(id: Int): String
 }
@@ -46,7 +46,7 @@ class UserApiMock: UserApi {
 }
 ```
 JUnit測試如以下：
-```Kotlin
+```kotlin
 @Test
 fun testUsingMock() {
 	val api = UserApiMock()

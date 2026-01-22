@@ -38,7 +38,6 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({ 
-      title: "Explorer",
       folderClickBehavior: "collapse"
     }),
   ],
@@ -65,7 +64,6 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({ 
-      title: "Explorer",
       folderClickBehavior: "collapse"
     }),
   ],

@@ -2,7 +2,7 @@
 
 ### 使用方式
 在build.gradle加入
-```java
+```kotlin
 dependencies {
 	androidTestImplementation 'androidx.test.ext:junit:1.1.5'  
 	androidTestImplementation 'com.android.support.test:rules:1.0.2'  
@@ -12,7 +12,7 @@ dependencies {
 }
 ```
 另外在android.defaultConfig加上
-```java
+```kotlin
 android {
 	...
 	defaultConfig {
@@ -35,7 +35,7 @@ UI Test主要要做的就是三件事：
 
 範例：
 一個`account`型態為TextView，一個`submit`型態為Button
-```Kotlin
+```kotlin
 submit.isEnabled = false 
 account.addTextChangedListener(object : TextWatcher { 
 	override fun afterTextChanged(s: Editable?) { 
@@ -56,7 +56,7 @@ account.addTextChangedListener(object : TextWatcher {
 說明：當`account`有輸入文字就把`submit`設為可點擊。
 
 寫測試時，可以檢查當`account`有輸入時，`submit`的狀態有沒有跟著改變。如下：
-```Kotlin
+```kotlin
 @RunWith(AndroidJUnit4::class)
 class LoginActivityTest {
 	@Rule 

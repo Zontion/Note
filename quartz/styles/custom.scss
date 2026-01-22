@@ -5,16 +5,58 @@
     color: #FFD306;
 }
 
-/* 預設設定在quartz/styles/base.scss裡 但是如果直接修改base.scss 未來Quartz更新時會被覆蓋 */
-/* 頁面上方padding間距 */
+/* 1. 頁面整體高度控制 */
+/* 這裡控制所有內容距離瀏覽器頂部的距離，1rem (約 16px) 最剛好 */
 .page {
-    /* 預設大約是 6rem (96px)，我們把它改小一點 */
-    padding-top: 2rem; 
+    padding-top: 1rem !important;
+    align-items: flex-start !important; /* 確保左中右三欄都靠上對齊 */
   }
   
-  /* 手機版頁面上方padding間距 */
+  /* 2. 左側與右側邊欄：歸零 */
+  .left, .right, .sidebar {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  /* 3. 中間主要內容區：關鍵修正 */
+  .center {
+    /* 將排版模式改為 Flex，解決原本 Grid 留下的空行問題 */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    
+    /* 消除容器內部的推擠 */
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    gap: 0 !important; 
+  }
+  
+  /* 4. 確保文章內容貼頂 */
+  /* 讓 .center 裡面的第一個元素 (文章) 乖乖對齊 */
+  .center > * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* 5. 標題微調 */
+  h1.article-title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    /* 標題下方留一點空間與內文區隔 */
+    margin-bottom: 0.5rem !important; 
+    line-height: 1.2 !important;
+  }
+  
+  /* 6. 隱藏不需要的佔位元件 */
+  /* 這裡隱藏了麵包屑和空的搜尋框，這是消除隱形空白的關鍵 */
+  .breadcrumb-container, 
+  .spacer {
+    display: none !important;
+  }
+  
+  /* 7. 手機版優化 */
   @media all and (max-width: 750px) {
     .page {
-      padding-top: 1rem;
+      padding-top: 0.5rem !important; /* 手機上可以再緊湊一點 */
     }
   }

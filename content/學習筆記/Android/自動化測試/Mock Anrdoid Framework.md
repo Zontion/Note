@@ -15,7 +15,7 @@ ___
 
 ### 使用方式
 在build.gradle加入
-```java
+```kotlin
 dependencies {
 	testImplementation 'org.mockito:mockito-core:$mockitoVersion'
 	testImplementation 'org.mockito:mockito-inline:$mockitoVersion'
