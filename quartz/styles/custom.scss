@@ -4,3 +4,17 @@
 .color_yellow_FFD306 {
     color: #FFD306;
 }
+
+/* 預設設定在quartz/styles/base.scss裡 但是如果直接修改base.scss 未來Quartz更新時會被覆蓋 */
+/* 頁面上方padding間距 */
+.page {
+    /* 預設大約是 6rem (96px)，我們把它改小一點 */
+    padding-top: 2rem; 
+  }
+  
+  /* 手機版頁面上方padding間距 */
+  @media all and (max-width: $mobile) {
+    .page {
+      padding-top: 1rem;
+    }
+  }
