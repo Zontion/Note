@@ -1,7 +1,7 @@
 # 工作環境設置檔
-.obsidian/workspace.json
+**/.obsidian/workspace.json
 # 視窗大小、介面偏好等全域設定
-.obsidian/app.json
+**/.obsidian/app.json
 .DS_Store
 node_modules
 public
