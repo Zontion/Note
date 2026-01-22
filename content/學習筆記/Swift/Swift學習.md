@@ -2,9 +2,9 @@
 
 # Swift學習
 ### CoreData
-1.Editor > Add Model Version... > *** 2.xcdatamodel
-2.切換右邊的Model Version上拉選單 改為新的core data (*** 2)
-3.在AppDelegate修改NSMigratepersistentSotresAutomaticallyOption相關程式
+1. Editor > Add Model Version... > *** 2.xcdatamodel
+2. 切換右邊的Model Version上拉選單 改為新的core data (*** 2)
+3. 在AppDelegate修改NSMigratepersistentSotresAutomaticallyOption相關程式
 
 >[!info]
 **關鍵字:** coredata version 版本遷移
