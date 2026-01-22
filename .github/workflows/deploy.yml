@@ -28,6 +28,7 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+        # 額外新增這一段：強制把 content 裡面的東西搬到最外面
       - name: Fix directory structure
         run: |
           if [ -d "public/content" ]; then
