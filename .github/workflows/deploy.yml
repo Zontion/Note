@@ -28,10 +28,19 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+      - name: Fix directory structure
+        run: |
+          if [ -d "public/content" ]; then
+            mv public/content/* public/
+            rm -r public/content
+            echo "✅ Successfully moved files from public/content to public/"
+          else
+            echo "⚠️ No 'content' folder found inside public. Structure might be already correct."
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public/content
+          path: public
 
   deploy:
     environment:
