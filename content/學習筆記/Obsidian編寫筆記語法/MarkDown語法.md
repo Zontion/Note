@@ -54,6 +54,7 @@
 ### 圖片範例
 
 ![Alt 文本](https://www.example.com/image.png)
+(此功能為點擊圖片後會有放大效果，目前連結失效，可能是需要有效的網路圖片連結)
 
 
 ## 5. 程式碼
@@ -98,3 +99,72 @@ def hello_world():
 | Alice | 25  | 工程師 |
 | Bob   | 30  | 設計師 |
 |       |     |     |
+
+---
+
+## 9. 流程圖
+
+
+```mermaid
+graph TD
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+    C -->|Three| F[Result three]
+    F --> G[Answer]
+```
+[更多關於 **流程圖** 語法](http://adrai.github.io/flowchart.js/)
+
+---
+
+### 10.數學表達式
+
+您可以使用 **MathJax** 語法 來產生 *LaTeX* 數學表達式，如同 [math.stackexchange.com](http://math.stackexchange.com/)，但是開始的 `$` 後面以及結尾的 `$` 前面不能有空白：
+
+The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
+
+使用區塊層級的數學式時，請在您的數學式之前與之後給予 `$$` 以及換行：
+
+$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
+$$
+
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
+[更多關於 **LaTeX** 數學表達式](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+
+---
+
+### 11.各式圖表(Mermaid)
+
+1. 進度圖
+```mermaid
+gantt
+	title A Gantt Diagram
+
+	section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    anther task      : 24d
+```
+
+2. 圓餅圖
+``` mermaid 
+%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#9AFF02', 'pie2': '#66B3FF', 'pie3': '#FFA042'}}}%%
+pie
+
+title 中樂透頭獎機率？
+
+"不會" : 95
+"還是不會" : 5
+```
+
+[更多關於 **mermaid** 語法](http://mermaid-js.github.io/mermaid)
+
+
+
