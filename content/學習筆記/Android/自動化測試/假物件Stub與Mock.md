@@ -24,8 +24,7 @@ fun testWithStub() {
 	Assert.assertEquals("StubUser", result) //只驗證回傳資料
 }
 ```
->[!info]
->**Stub特性**：
+>[!abstract] Stub特性：
 >* Stub不會紀錄是否被呼叫
 >* 不會檢查「被呼叫的參數(範例中的123)為何」
 >* 單純提供固定值讓測試能跑
@@ -57,8 +56,7 @@ fun testUsingMock() {
 }
 ```
 
->[!info]
->**Mock特性：**
+>[!abstract] Mock特性：
 >* Mock可以記錄是否被呼叫
 >* 可以驗證呼叫行為
 >* 可以知道呼叫幾次、參數是什麼

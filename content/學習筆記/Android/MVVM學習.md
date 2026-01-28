@@ -1,4 +1,4 @@
->[!abstract]
+>[!info] 學習須知
 >1. 本次學習會用到 Java + LiveData + Retrofit + Gson
 >2. 相關工具後面都會介紹
 >3. 無使用Databinding，因為私心不喜歡
@@ -12,12 +12,12 @@
 
 **Model**：管理所有的資料來源，例如API、資料庫和SharedPreference，當ViewModel來請求資料時從正確的來源取得資料並回傳。
 
->[!info]
->ViewModel是屬於Android Jetpack裡的lifecycle類，可以有效的解決記憶體洩漏，及難以處理的Activity生命週期問題。以往我們會把取得的資料存在Activity裡，用來應付各種情況所需。但當你的螢幕旋轉畫面上，會發現上面的資料不見了。這是因為旋轉時Activity會先被銷毀(destoryed)再重新產生(onCreated)。所以之前放在Activity裡的資料就會因為這樣而不見了。
+>[!note] ViewModel介紹
+>>ViewModel是屬於Android Jetpack裡的lifecycle類，可以有效的解決記憶體洩漏，及難以處理的Activity生命週期問題。以往我們會把取得的資料存在Activity裡，用來應付各種情況所需。但當你的螢幕旋轉畫面上，會發現上面的資料不見了。這是因為旋轉時Activity會先被銷毀(destoryed)再重新產生(onCreated)。所以之前放在Activity裡的資料就會因為這樣而不見了。
 >
->另外，即使你的App不讓使用者旋轉，Activities、Fragments 和 views 還是可能在任何時候被destroyed。例如當你開啟App後，離開到別的App，隔了一天再回來app時。你的Activity可能已經被回收了，這時候你開App即會重新產生一個Activity，這時資料就會不見。或是你的app可能會閃退。這種錯誤通常不容易測試。因為你不會把App放一天再開起來測試。但對使用者來說，這可能是經常會發生的錯誤。
+>>另外，即使你的App不讓使用者旋轉，Activities、Fragments 和 views 還是可能在任何時候被destroyed。例如當你開啟App後，離開到別的App，隔了一天再回來app時。你的Activity可能已經被回收了，這時候你開App即會重新產生一個Activity，這時資料就會不見。或是你的app可能會閃退。這種錯誤通常不容易測試。因為你不會把App放一天再開起來測試。但對使用者來說，這可能是經常會發生的錯誤。
 >
->所以我們需要另一個比Activity生命週期更長的地方來存放資料，ViewModel正可以為我們解決這個問題。
+>>所以我們需要另一個比Activity生命週期更長的地方來存放資料，ViewModel正可以為我們解決這個問題。
 
 ## MVVM架構圖
 ![[img_mvvm.png]]]
@@ -211,7 +211,7 @@ public interface AlbumsService {
 }
 ```
 
->[!info]
+>[!tip]
 >Retrofit的create只吃interface參數
 
 新增一個folder -> retrofit，裡面新增RetrofitManager

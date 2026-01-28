@@ -105,7 +105,7 @@ Stub定義如下圖
 
 ![[img_stub_1.png]]
 
->[!info]
+>[!note] 名稱介紹
 >* Test：測試程式，UmbrellaTest.totalPrice_sunnyDay()  
 >* SUT：被測試物件，也就是Umebralla.totalPrice()用來計價的方法。  
 >* Stub：假天氣物件StubWeather，用來回傳預期是晴天或雨天。

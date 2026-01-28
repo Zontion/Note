@@ -7,7 +7,7 @@
 1. **Mockito**：Java 社群主流的 mocking library，用來模擬（mock）物件行為。官方 Android / Java 支持，Kotlin 也能用，但語法對 Kotlin 某些特性（如 final class、data class）不太友好，需要額外配置。
 2. **MockK**：Kotlin 原生的 mocking library，完全支援 Kotlin 特性（final class、extension function、coroutine 等），語法更 Kotlin 化。
 
->[!tip]
+>[!tip] 結論
 >若專案以Android+Kotlin開發，更推薦使用<font color="red">**Mockito更偏向Java、MockK更偏向Kotlin**</font>。
 
 ___
@@ -23,8 +23,8 @@ dependencies {
 ```
 mockito-core是基礎版本，mockito-inline為mockito-core的擴充，mockito-inline使用Byte Buddy作為Mock Maker，可支援更多的使用情境，如：static、final及建構子等。
 
->[!info]
->Byte Buddy - 用來動態生成或修改Java類別bytecode的工具。Byte Buddy會生成一個新的class。所以可以做到改寫getter行為，因此可以做到回傳mock值。
+>[!note] 什麼是Byte Buddy
+>用來動態生成或修改Java類別bytecode的工具。Byte Buddy會生成一個新的class。所以可以做到改寫getter行為，因此可以做到回傳mock值。
 
 以[[JUnit範例 - 晴天9折，下雨沒折]]中，單純用JUnit要使用Stub物件時，需要先寫一個StubWeather去繼承IWeather並實作isSunny()回傳假資料。
 
