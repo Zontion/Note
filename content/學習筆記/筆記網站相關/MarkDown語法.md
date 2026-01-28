@@ -165,13 +165,13 @@ gantt
 
 2. 圓餅圖
 ``` mermaid 
-%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#9AFF02', 'pie2': '#66B3FF', 'pie3': '#FFA042'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#0072E3', 'pie2': '#00BB00', 'pie3': '#FFA042'}}}%%
 pie
 
-title 中樂透頭獎機率？
+title 你今天中頭獎的機率
 
 "不會" : 95
-"還是不會" : 5
+"還是不會，只是是綠色" : 5
 ```
 
 [更多關於 **mermaid** 語法](http://mermaid-js.github.io/mermaid)
