@@ -9,6 +9,9 @@ on:
       - v4
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-and-test:
     if: ${{ github.repository == 'jackyzha0/quartz' }}

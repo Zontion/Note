@@ -5,6 +5,9 @@ on:
     types: [opened, synchronize]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-preview:
     if: ${{ github.repository == 'jackyzha0/quartz' }}
